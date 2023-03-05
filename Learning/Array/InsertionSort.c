@@ -9,16 +9,15 @@ int main(){
         printf("Enter array element\n");
         scanf("%d",&a[i]);
     }
-    
-    int result[] = InsertionSort(a,s);
+    InsertionSort(&a,s);
     printf("Result is \n");
     for(int i = 0; i<s;i++){
-        printf("%d",result[i]);
+        printf("%d",a[i]);
     }
     return 0;
 }
 
-int* InsertionSort(int arr[], int size){
+void InsertionSort(int* arr, int size){
     int i, j, key;
     for(j = 1 ; j<size ; j++){
         key = arr[j];
@@ -28,6 +27,5 @@ int* InsertionSort(int arr[], int size){
             i = i-1;
         }
         arr[i+1] = key;
-        return &arr;
     }
 }
