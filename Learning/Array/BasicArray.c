@@ -7,6 +7,11 @@ int days[] = {31,28,30,31,30};
 
 //  Dyanamic Initialisation
 int c[6];
-for(int i = 0; i < 6; i++){
-    c[i] = 6-i;
-}
+
+int main(){
+    //  Runtime Initialisation
+    int d[5];
+    for(int i = 0; i<5;i++){
+        d[i] = 5-i;
+    }
+} 
