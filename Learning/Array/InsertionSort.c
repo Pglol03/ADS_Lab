@@ -1,4 +1,5 @@
 #include<stdio.h>
+void InsertionSort(int arr[], int size);
 
 int main(){
     printf("Enter the size of the array\n");
@@ -9,7 +10,7 @@ int main(){
         printf("Enter array element\n");
         scanf("%d",&a[i]);
     }
-    InsertionSort(&a,s);
+    InsertionSort(a,s);
     printf("Result is \n");
     for(int i = 0; i<s;i++){
         printf("%d",a[i]);
@@ -17,7 +18,7 @@ int main(){
     return 0;
 }
 
-void InsertionSort(int* arr, int size){
+void InsertionSort(int arr[], int size){
     int i, j, key;
     for(j = 1 ; j<size ; j++){
         key = arr[j];
