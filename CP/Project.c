@@ -4,6 +4,7 @@
 #include <time.h>
 
 #define MAX_FILES 10000
+//this is the code
 
 typedef struct file_s {
     char *filename;
