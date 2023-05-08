@@ -1,5 +1,10 @@
 #include<stdio.h>
-
+#include "../Learning/Array/BinarySearch"
+#include "../Learning/Array/FibonacciSearch"
+#include "../Learning/Array/InsertionSort"
+#include "../Learning/Array/MergeSort"
+#include "../Learning/Array/Quicksort"
+#include "../Learning/Array/SelectionSort"
 void opt1(){
     printf("***Bubble Sort***\n");
     int arr[] = {1, 7, 4, 6, 2};
@@ -67,7 +72,7 @@ int main(){
 
         switch (option){
             case 1:
-                opt1();
+                BinarySearch();
                 break;
 
             case 2:
@@ -90,6 +95,6 @@ int main(){
             printf("Wrong Input, try again!");
                 break;
         }
-    }while(quit == 1);
+    }while(quit);
     
 }
